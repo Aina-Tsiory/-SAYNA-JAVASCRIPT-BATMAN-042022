@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'rajdhani';
+    src: url('Rajdhani-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'autre-font';
+    src: url('SpaceGrotesk-VariableFont_wght.ttf') format('opentype');
+}
+
+body {
+    font-family: 'autre-font';
+    font-size: 18px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    font-family: 'rajdhani';
+    font-size: 36px;
+    color: white;
+}
+
+.sous-titre {
+    font-family: 'autre-font';
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.remarque {
+    font-family: 'autre-font';
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+}
+
+.principale {
+    padding: 50px 10%;
+    margin: 0;
+}
+
+.boutons a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* .boutons a:hover {
+    color: white;
+    font-weight: bold;
+} */
+
+.boutons {
+    font-family: 'rajdhani';
+    font-size: 20px;
+}
+
+.bordure {
+    border: solid 5px rgba(224, 222, 222, 0.5);
+    border-bottom: solid 0px rgba(224, 222, 222, 0.5);
+}
+
+.navigateur {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.part1 {
+    padding: 30vh 10px;
+}
+
+.colone-flex {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding-left: 80%;
+}
+
+.colone-flex img {
+    width: 25%;
+}
+
+#part2 {
+    padding: 100px 5%;
+}
+
+.questionaire {
+    width: 50%;
+}
+
+.choix {
+    background-color: rgba(237, 222, 191, 0.4);
+    padding: 5px;
+}
+
+.demarrer {
+    background: rgb(75, 74, 75);
+    background: linear-gradient(90deg, rgba(75, 74, 75, 1) 0%, rgba(73, 41, 41, 1) 50%, rgba(193, 2, 19, 1) 100%);
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-rs {
+    padding: 0 20px;
+}
+
+
+/* 
+__________________________________________________________
+__________________________________________________________ */
+
+.part1-home {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 10px;
+}
+
+#hero-adv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-adv {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6026785714285714) 1%, rgba(184, 184, 184, 0.40379901960784315) 51%, rgba(121, 121, 121, 0.7987570028011204) 100%);
+    width: 100%;
+    margin: 0 20px;
+    padding: 10px 0px;
+}
+
+#trois-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+#trois-image img {
+    width: 90%;
+    padding: 20px;
+}
+
+.slide {
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.contenue-slide img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
