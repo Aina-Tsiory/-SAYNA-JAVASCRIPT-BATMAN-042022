@@ -48,13 +48,30 @@ let totalImage = [
     "../assets/Illustrations/Home/Batslider10.png"
 ]
 
+let image = $(".contenue-image");
+
 let i = 0;
 setInterval(function() {
     i = (i + 1) % totalImage.lenght;
     $(document).ready(function() {
-        image.fadeOut(1000, () => {
+        image.fadeOut(3000, () => {
             image.attr("src", totalImage[i]);
-            image.fadeIn(1000);
+            image.fadeIn(3000);
         });
-    }, 3000);
+    }, 1000);
 })
+
+let totalVideo = [
+    "../assets/Illustrations/Home/Batslider1.png",
+    "../assets/Illustrations/Home/Batslider2.png",
+    "../assets/Illustrations/Home/Batslider3.png",
+    "../assets/Illustrations/Home/Batslider4.png",
+    "../assets/Illustrations/Home/Batslider5.png",
+    "../assets/Illustrations/Home/Batslider6.png",
+    "../assets/Illustrations/Home/Batslider7.png",
+    "../assets/Illustrations/Home/Batslider8.png",
+    "../assets/Illustrations/Home/Batslider9.png",
+    "../assets/Illustrations/Home/Batslider10.png"
+]
+
+let video = $(".contenue-video");
