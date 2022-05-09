@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 
 <body style="background-image:url('assets/Illustrations/Home/Bathome1.png');background-size: contain;background-repeat: no-repeat;
@@ -77,9 +79,18 @@ background-color: #000000;">
                     chauve souris. Voici les trois derniers :</P>
 
                 <div class="trois-image">
-                    <div><img src="assets/Illustrations/Home/Bathome2.png" alt=""></div>
-                    <div><img src="assets/Illustrations/Home/Bathome3.png" alt=""></div>
-                    <div><img src="assets/Illustrations/Home/Bathome4.png" alt=""></div>
+                    <div style="text-align: center;z-index: 10;">
+                        <div><img class="un-image1" src="assets/Illustrations/Home/Bathome2.png" alt=""></div>
+                        <div class="caption" style="display:none;color:white;text-align: center;margin-top: -60px;background-color: salmon; padding: 10px 0;width: 100%;z-index: 100;">1er Batman, dont find source of picture</div>
+                    </div>
+                    <div style="text-align: center;z-index: 10;">
+                        <div><img class="un-image2" src="assets/Illustrations/Home/Bathome3.png" alt=""></div>
+                        <div class="caption2" style="display:none;color:white;text-align: center;margin-top: -60px;background-color: salmon; padding: 10px 0;width: 100%;z-index: 100;">2er Batman, dont find source of picture</div>
+                    </div>
+                    <div style="text-align: center;z-index: 10;">
+                        <div><img class="un-image3" src="assets/Illustrations/Home/Bathome4.png" alt=""></div>
+                        <div class="caption3" style="display:none;color:white;text-align: center;margin-top: -60px;background-color: salmon; padding: 10px 0;width: 100%;z-index: 100;">3er Batman, dont find source of picture</div>
+                    </div>
                 </div>
             </section>
             <section class="slide">
@@ -115,14 +126,39 @@ background-color: #000000;">
                     </div>
                     <div style="padding: 10px 0;">
                         <p>NEWSLETTER</p>
-                        <p style="display: inline;"><label for="check">En cochant cette case, vous acceptez de recevoir l'actualité concernant les aventures de Batman </label>
+                        <p style="display: inline;opacity: 0.7;"><label for="check">En cochant cette case, vous acceptez de recevoir l'actualité concernant les aventures de Batman </label>
                             <input type="checkbox" name="check" id="check">
                         </p>
                     </div>
                     <div style="padding: 10px 0;">
-                        <span style="color: white;">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter.</span><select style="background-color: grey; border:none;" name="choixHome" id=""></select>
+                        <span style="color: white;opacity: 0.7;">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter.</span><select style="background-color: grey; border:none;" name="choixHome" id=""></select>
+                    </div>
+                    <div style="padding: 10px 0;">
+                        <p style="border: none; border-bottom:solid 1px white; background-color: grey;opacity: 0.7;">Souhaitez-vous recevoir des news</p>
+                    </div>
+
+                    <section style="display: flex;justify-content:center;padding: 20px 0;">
+                        <div style="padding: 10px 20px;"><button style="color:white;border: solid 1px white;background-color:grey;">Des films</button></div>
+                        <div style="padding: 10px 20px;"><button style="color:white;border: solid 1px white;background-color:grey;">Des comics</button></div>
+                        <div style="padding: 10px 20px;"><button style="color:white;border: solid 1px white;background-color:grey;">De tout</button></div>
+                    </section>
+
+                    <div id="demarrer" style="text-align: center;padding: 50px 0;">
+                        <a style="text-decoration: none;" href="error.html">
+                            <p class="demarrer">CONFIRMER</p>
+                        </a>
                     </div>
                 </section>
+            </section>
+
+            <section style="padding: 50px 0;">
+                <div><i style="font-size: 70px;" class="fa-solid fa-quote-left"></i></div>
+                <div style="text-align: center;">
+                    <b class="sous-titre">La seule façon raisonnable de vivre en ce bas monde, <br>
+                        c'est en dehors des règles.</b>
+                    <p>The Dark Knight : Le Chevalier Noir <br> Le Joker à Batman (2008)</p>
+                </div>
+                <div><i style="font-size: 70px;" class="fa-solid fa-quote-right"></i></div>
             </section>
 
 
@@ -143,7 +179,7 @@ background-color: #000000;">
             <div class="logo-rs "><img class="logo " src="Assets/Logos/icon_tw.png " alt=" "></div>
         </section>
 
-        <script src="assets/js/game.js "></script>
+        <script src="Assets/js/game.js"></script>
 </body>
 
 </html>

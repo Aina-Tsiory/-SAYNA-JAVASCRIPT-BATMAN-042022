@@ -79,6 +79,37 @@ window.addEventListener("scroll", () => {
 })
 
 
+$("window").ready(function() {
+    $(".un-image1").mouseover(function() {
+        $(this).css("width", "110%");
+        $('.caption').css('display', 'block')
+    })
+    $(".un-image1").mouseout(function() {
+        $(this).css("width", "100%");
+        $('.caption').css('display', 'none')
+    })
+
+    $(".un-image2").mouseover(function() {
+        $(this).css("width", "110%");
+        $('.caption2').css('display', 'block')
+    })
+    $(".un-image2").mouseout(function() {
+        $(this).css("width", "100%");
+        $('.caption2').css('display', 'none')
+    })
+
+    $(".un-image3").mouseover(function() {
+        $(this).css("width", "110%");
+        $('.caption3').css('display', 'block')
+    })
+    $(".un-image3").mouseout(function() {
+        $(this).css("width", "100%");
+        $('.caption3').css('display', 'none')
+    })
+});
+
+
+
 
 let totalVideo = [
     "../assets/Illustrations/Home/Batslider1.png",
