@@ -60,7 +60,7 @@ h1 {
 }
 
 .bordure {
-    border: solid 5px rgba(224, 222, 222, 0.5);
+    border: solid 5px #BCBBBD;
     border-bottom: solid 0px rgba(224, 222, 222, 0.5);
 }
 
@@ -142,14 +142,20 @@ __________________________________________________________ */
     padding: 10px 0px;
 }
 
-#trois-image {
+.trois-image {
     display: flex;
+    width: 0%;
     flex-direction: row;
     justify-content: center;
     padding: 100px 0;
+    transition: all 1s ease-out;
 }
 
-#trois-image img {
+.final-zoom {
+    width: 100%;
+}
+
+.trois-image img {
     width: 90%;
     padding: 20px;
 }

@@ -9,7 +9,7 @@ $("window").ready(function() {
         $(this).css("color", "white");
     });
 
-    $("#demarrer a").hover(function() {
+    $(".demarrer a").hover(function() {
         $(this).css("font-weight", "bold");
         $(this).css("color", "white");
     }, function() {
@@ -17,7 +17,7 @@ $("window").ready(function() {
         $(this).css("color", "white");
     });
 
-    $("#demarrer p").hover(function() {
+    $(".demarrer p").hover(function() {
         $(this).css("background", "rgb(193,2,19)");
         $(this).css("background", "linear-gradient(90deg, rgba(193,2,19,1) 1%, rgba(73,41,41,1) 51%, rgba(75,74,75,1) 100%)");
     }, function() {
@@ -52,14 +52,33 @@ let image = $(".contenue-image");
 
 let i = 0;
 setInterval(function() {
-    i = (i + 1) % totalImage.lenght;
-    $(document).ready(function() {
-        image.fadeOut(3000, () => {
-            image.attr("src", totalImage[i]);
-            image.fadeIn(3000);
-        });
-    }, 1000);
+    for (let i = 0; i < totalImage.length; i++) {
+        const element = totalImage[i];
+        $(document).ready(function() {
+            image.fadeOut(2000, () => {
+                image.attr("src", totalImage[i]);
+                image.fadeIn(2000);
+                if (i == totalImage) {
+                    i = 0;
+                }
+            });
+        }, 100);
+
+    }
 })
+
+let troisImage = document.querySelector('.tois-image')
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        troisImage.classList.add("final-zoom");
+    } else {
+        troisImage.classList.remove("final-zoom");
+    }
+
+})
+
+
 
 let totalVideo = [
     "../assets/Illustrations/Home/Batslider1.png",
